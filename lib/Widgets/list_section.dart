@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../Screens/add_todos.dart';
+
 class ListItems extends StatelessWidget {
   final String title;
   final String subtitle;
@@ -17,24 +19,36 @@ class ListItems extends StatelessWidget {
         right: 8.0,
         top: 28.0,
       ),
-      child: Card(
-        child: ListTile(
-          leading: CircleAvatar(
-            backgroundImage: AssetImage(imageUrl),
-          ),
-          trailing: Icon(myIconData),
-          title: Text(title),
-          subtitle: Text(
-            subtitle,
-            style: TextStyle(
-              color: Colors.grey,
+      child: GestureDetector(
+        onTap: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_){
+                return AddTodos();
+              },
+            ),
+          );
+        },
+        child: Card(
+          child: ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(imageUrl),
+            ),
+            trailing: Icon(myIconData),
+            title: Text(title),
+            subtitle: Text(
+              subtitle,
+              style: TextStyle(
+                color: Colors.grey,
+              ),
             ),
           ),
-        ),
-        color: Colors.white,
-        elevation: 12.5,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10.5),
+          color: Colors.white,
+          elevation: 12.5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.5),
+          ),
         ),
       ),
     );

@@ -10,7 +10,7 @@ class AddTodos extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          "Add Todos",
+          "Add Todos Guys",
           style: TextStyle(
             color: Colors.black,
             fontSize: 25.0,

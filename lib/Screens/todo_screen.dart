@@ -36,16 +36,7 @@ class TodoScreen extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_){
-                            return AddTodos();
-                          },
-                        ),
-                      );
-                    },
+                    onPressed: () {},
                     icon: Icon(Icons.notifications),
                   ),
                 ],
