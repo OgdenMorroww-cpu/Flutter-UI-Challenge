@@ -2,8 +2,6 @@
 
 import 'package:first_app/Widgets/container_section.dart';
 import 'package:first_app/Widgets/list_section.dart';
-import 'package:first_app/Widgets/list_section_three.dart';
-import 'package:first_app/Widgets/list_section_two.dart';
 import 'package:first_app/Widgets/row_section.dart';
 import 'package:flutter/material.dart';
 
@@ -54,9 +52,24 @@ class TodoScreen extends StatelessWidget {
               ),
               ContainerSection(),
               RowSection(),
-              ListItems(),
-              ListItemsTwo(),
-              ListItemsThree(),
+              ListItems(
+                title: "UI Design",
+                subtitle: "09:00 AM - 11:00 AM",
+                imageUrl: "asset/designer.png",
+                myIconData: Icons.arrow_forward_ios,
+              ),
+              ListItems(
+                title: "Web Development",
+                subtitle: "11:30 AM - 12:30 PM",
+                imageUrl: "asset/web.png",
+                myIconData: Icons.arrow_forward_ios,
+              ),
+              ListItems(
+                title: "Office Meeting",
+                subtitle: "02:00 PM - 03:00 PM",
+                imageUrl: "asset/meeting.png",
+                myIconData: Icons.arrow_forward_ios,
+              ),
             ],
           ),
         ),

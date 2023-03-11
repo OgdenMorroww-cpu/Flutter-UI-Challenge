@@ -3,7 +3,11 @@
 import 'package:flutter/material.dart';
 
 class ListItems extends StatelessWidget {
-  const ListItems({Key? key}) : super(key: key);
+  final String title;
+  final String subtitle;
+  final String imageUrl;
+  final IconData myIconData;
+  const ListItems({Key? key, required this.title, required this.subtitle, required this.imageUrl, required this.myIconData}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +20,12 @@ class ListItems extends StatelessWidget {
       child: Card(
         child: ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage("asset/designer.png"),
+            backgroundImage: AssetImage(imageUrl),
           ),
-          trailing: Icon(Icons.arrow_forward_ios),
-          title: Text("UI Design"),
+          trailing: Icon(myIconData),
+          title: Text(title),
           subtitle: Text(
-            "09:00 AM - 11:00 AM",
+            subtitle,
             style: TextStyle(
               color: Colors.grey,
             ),
