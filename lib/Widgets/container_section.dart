@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, sort_child_properties_last
 
+import 'package:first_app/Widgets/container_contents.dart';
 import 'package:flutter/material.dart';
 
 class ContainerSection extends StatelessWidget {
@@ -16,6 +17,7 @@ class ContainerSection extends StatelessWidget {
       child: Container(
         width: 450.5,
         height: 200.5,
+        child: ContainerContents(),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topRight,

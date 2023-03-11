@@ -43,15 +43,23 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20.5),
                 Padding(
-                  padding: const EdgeInsets.only(left: 25.0, right: 25.0),
+                  padding: const EdgeInsets.only(
+                    left: 28.0,
+                    right: 28.0,
+                  ),
                   child: Text(
-                    'A workspace to over 10 Million influencers '
-                    'around every corners of the world',
-                    softWrap: true,
+                    'A workspace to over 10 Million influencers ',
                     style: TextStyle(
-                      fontSize: 20.8,
+                      fontSize: 13.8,
                       color: Colors.grey,
                     ),
+                  ),
+                ),
+                Text(
+                  "around the global of the world",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 13.8,
                   ),
                 ),
                 SizedBox(height: 118.5),

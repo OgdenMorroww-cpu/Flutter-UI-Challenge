@@ -4,8 +4,8 @@ import 'package:first_app/Widgets/container_section.dart';
 import 'package:first_app/Widgets/list_section.dart';
 import 'package:first_app/Widgets/row_section.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'add_todos.dart';
 
 class TodoScreen extends StatelessWidget {
   const TodoScreen({Key? key}) : super(key: key);
@@ -18,16 +18,18 @@ class TodoScreen extends StatelessWidget {
           padding: EdgeInsets.only(
             left: 25.0,
             right: 25.0,
-            top: 48.0,
+            top: 55.0,
           ),
           child: Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.menu),
+                  Image.asset(
+                    "asset/menu.png",
+                    width: 20.5,
+                    height: 20.5,
+                    fit: BoxFit.contain,
                   ),
                   Text(
                     "HomePage",
@@ -35,9 +37,11 @@ class TodoScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.notifications),
+                  Image.asset(
+                    "asset/notification.png",
+                    width: 20.5,
+                    height: 20.5,
+                    fit: BoxFit.contain,
                   ),
                 ],
               ),

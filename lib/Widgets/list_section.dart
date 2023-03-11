@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, sort_child_properties_last
 
+import 'package:first_app/Widgets/CreateTask/create_task.dart';
 import 'package:flutter/material.dart';
 
 import '../Screens/add_todos.dart';
@@ -25,7 +26,7 @@ class ListItems extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (_){
-                return AddTodos();
+                return CreateTask();
               },
             ),
           );
@@ -45,7 +46,8 @@ class ListItems extends StatelessWidget {
             ),
           ),
           color: Colors.white,
-          elevation: 12.5,
+          shadowColor: Colors.black,
+          elevation: 2.5,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10.5),
           ),
