@@ -29,10 +29,12 @@ class FourthSection extends StatelessWidget {
             SizedBox(width: 12.5),
             Chip(
               label: Text("Development"),
+              backgroundColor: Colors.grey,
             ),
             SizedBox(width: 12.5),
             Chip(
               label: Text("Research"),
+              backgroundColor: Colors.grey,
             ),
           ],
         ),
